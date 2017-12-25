@@ -1,4 +1,4 @@
-<!doctype html>
+{{--<!doctype html>
 <html lang="{{ app()->getLocale() }}">
     <head>
         <meta charset="utf-8">
@@ -80,7 +80,7 @@
             <div class="content">
                 <div class="title m-b-md">
                     Laravel
-                </div>
+                </div>--}}
 
                 <div class="links">
                     <a href="https://laravel.com/docs">Documentation</a>
@@ -89,7 +89,7 @@
                     <a href="https://forge.laravel.com">Forge</a>
                     <a href="https://github.com/laravel/laravel">GitHub</a>
                 </div>
-            </div>
+     {{--       </div>
         </div>
     </body>
-</html>
+</html>--}}

@@ -18,5 +18,9 @@ Route::group(
     function ($router) {
         $router->get('/', 'DemoController@index');
         $router->get('/table', 'DemoController@table');
+        $router->get('/pajax', 'DemoController@pajax');
+        $router->get('/pajax/test1', 'DemoController@test1');
+        $router->get('/pajax/test2', 'DemoController@test2');
+        $router->get('/pajax/test3', 'DemoController@test3');
     }
 );
