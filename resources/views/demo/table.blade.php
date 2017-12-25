@@ -13,7 +13,6 @@
     <link href="/demo/css/animate.css" rel="stylesheet">
     <link href="/demo/css/style.css?v=4.1.0" rel="stylesheet">
 </head>
-
 <body class="gray-bg">
 <div class="row border-bottom">
     <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
@@ -104,12 +103,12 @@
             </li>
             <li class="dropdown">
                 <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#" aria-expanded="false">
-                  tanmillet
+                    tanmillet
                 </a>
                 <ul class="dropdown-menu dropdown-alerts">
                     <li>
                         <a href="mailbox.html">
-                           修改密码
+                            修改密码
                         </a>
                     </li>
                     <li>
@@ -120,7 +119,7 @@
                     <li class="divider"></li>
                     <li>
                         <a href="profile.html">
-                           退出
+                            退出
                         </a>
                     </li>
                 </ul>
@@ -128,8 +127,71 @@
         </ul>
     </nav>
 </div>
+<div style="float: left;width: 10%;height: 100%">
+    <nav class="navbar-default navbar-static-side" role="navigation" style="height: 100%">
+        <div class="nav-close"><i class="fa fa-times-circle"></i>
+        </div>
+        <div class="sidebar-collapse">
+            <ul class="nav" id="side-menu">
+                <li class="nav-header">
+                    <div class="dropdown profile-element">
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                                <span class="clear">
+                                    <span class="block m-t-xs" style="font-size:20px;">
+                                        <i class="fa fa-area-chart"></i>
+                                        <strong class="font-bold">hAdmin</strong>
+                                    </span>
+                                </span>
+                        </a>
+                    </div>
+                    <div class="logo-element">hAdmin
+                    </div>
+                </li>
+                <li class="hidden-folded padder m-t m-b-sm text-muted text-xs">
+                    <span class="ng-scope">分类</span>
+                </li>
+                <li>
+                    <a class="J_menuItem" href="/demo/table">
+                        <i class="fa fa-home"></i>
+                        <span class="nav-label">主页</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa fa-bar-chart-o"></i>
+                        <span class="nav-label">统计图表</span>
+                        <span class="fa arrow"></span>
+                    </a>
+                    <ul class="nav nav-second-level">
+                        <li>
+                            <a class="J_menuItem" href="graph_echarts.html">百度ECharts</a>
+                        </li>
+                        <li>
+                            <a class="J_menuItem" href="graph_flot.html">Flot</a>
+                        </li>
+                        <li>
+                            <a class="J_menuItem" href="graph_morris.html">Morris.js</a>
+                        </li>
+                        <li>
+                            <a class="J_menuItem" href="graph_rickshaw.html">Rickshaw</a>
+                        </li>
+                        <li>
+                            <a class="J_menuItem" href="graph_peity.html">Peity</a>
+                        </li>
+                        <li>
+                            <a class="J_menuItem" href="graph_sparkline.html">Sparkline</a>
+                        </li>
+                        <li>
+                            <a class="J_menuItem" href="graph_metrics.html">图表组合</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+<div class="wrapper wrapper-content animated fadeInRight" style="float: left;width: 85%;">
 
-<div class="wrapper wrapper-content animated fadeInRight">
     <!-- Panel Other -->
     <div class="ibox float-e-margins">
         <div class="ibox-title">
@@ -175,75 +237,21 @@
     </div>
     <!-- End Panel Other -->
 </div>
-
-<div class="modal inmodal" id="my_menu" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content animated fadeIn">
-            <div class="tabs-container">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal"><span
-                                aria-hidden="true">&times;</span><span class="sr-only">关闭</span>
-                    </button>
-                    <i class="fa fa-laptop modal-icon"></i>
-                    {{--<h4 class="modal-title">菜单列表</h4>--}}
-                    {{--<small class="font-bold">快捷方式</small>--}}
-                </div>
-                <div class="modal-body">
-                    <p>
-                        <a href="#user"><i class="fa fa-user"></i> 用户列表
-                        </a>
-                        <a href="#user"><i class="fa fa-user"></i> 用户列表
-                        </a>
-                        <a href="#user"><i class="fa fa-user"></i> 用户列表
-                        </a>
-                        <a href="#user"><i class="fa fa-user"></i> 用户列表
-                        </a>
-                        <a href="#user"><i class="fa fa-user"></i> 用户列表
-                        </a>
-                        <a href="#user"><i class="fa fa-user"></i> 用户列表
-                        </a>
-                        <a href="#user"><i class="fa fa-user"></i> 用户列表
-                        </a>
-                    </p>
-                    <p>
-                        <a href="#user"><i class="fa fa-user"></i> 用户列表
-                        </a>
-                        <a href="#user"><i class="fa fa-user"></i> 用户列表
-                        </a>
-                        <a href="#user"><i class="fa fa-user"></i> 用户列表
-                        </a>
-                        <a href="#user"><i class="fa fa-user"></i> 用户列表
-                        </a>
-                    </p>
-                </div>
-
-            </div>
-        </div>
-    </div>
-</div>
-
 <!-- 全局js -->
-<script src="js/jquery.min.js?v=2.1.4"></script>
-<script src="js/bootstrap.min.js?v=3.3.6"></script>
-
+<script src="/demo/js/jquery.min.js?v=2.1.4"></script>
+<script src="/demo/js/bootstrap.min.js?v=3.3.6"></script>
+<script src="/demo/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+<script src="/demo/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
 <!-- 自定义js -->
-<script src="js/content.js?v=1.0.0"></script>
-
-
+<script src="/demo/js/content.js?v=1.0.0"></script>
+<script src="/demo/js/hAdmin.js?v=4.1.0"></script>
+<script src="/demo/js/plugins/pace/pace.min.js"></script>
 <!-- Bootstrap table -->
 <script src="/demo/js/plugins/bootstrap-table/bootstrap-table.min.js"></script>
 <script src="/demo/js/plugins/bootstrap-table/bootstrap-table-mobile.min.js"></script>
 <script src="/demo/js/plugins/bootstrap-table/locale/bootstrap-table-zh-CN.min.js"></script>
-
 <!-- Peity -->
 <script src="/demo/js/demo/bootstrap-table-demo.js"></script>
-
-<!-- Peity -->
-{{--<script src="/demo/js/plugins/peity/jquery.peity.min.js"></script>--}}
-
-<!-- Peity -->
-{{--<script src="/demo/js/demo/peity-demo.js"></script>--}}
-
 </body>
 
 </html>

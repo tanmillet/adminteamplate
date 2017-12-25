@@ -180,7 +180,7 @@ function buildTable($el, cells, rows) {
             showRefresh: true,
             showToggle: true,
             showColumns: true,
-            pageSize: 20,
+            pageSize: 15,
             iconSize: 'outline',
             toolbar: '#exampleTableEventsToolbar',
             icons: {
